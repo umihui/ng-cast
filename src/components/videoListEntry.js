@@ -1,7 +1,8 @@
 angular.module('video-player')
 .component('videoListEntry', {
   bindings: {
-    video: '<'
+    video: '<',
+    onClick: '<'
   },
   
   //url: "https://www.youtube.com/embed/" + this.video.id.videoId,

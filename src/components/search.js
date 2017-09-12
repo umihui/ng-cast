@@ -3,8 +3,9 @@ angular.module('video-player')
 .component('search', {
 
 
-  controller: function() {
-    this.result = () => {};
+  controller: function(youTube) {
+    this.result = youTube.search;
+
 
 
   },

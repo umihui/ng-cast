@@ -11,6 +11,10 @@ angular.module('video-player')
    
     this.videos = window.exampleVideoData;
 
+    this.onClick = (video) => {
+      this.currentVideo = video;
+    };
+
   },
   
   // TODO

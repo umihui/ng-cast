@@ -61,6 +61,7 @@ describe('video player', function() {
   });
 
   it('should not render a videoplayer if no video is provided', function() {
+    console.log('check', noVideoElement.text());
     expect(noVideoElement.find('iframe')).to.have.length.below(1);
     expect(noVideoElement.text()).to.contain('Please wait');
   });
